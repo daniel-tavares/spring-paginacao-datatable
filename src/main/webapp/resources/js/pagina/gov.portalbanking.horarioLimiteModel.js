@@ -1,0 +1,3 @@
+$(function() {
+    service.editorTexto("#descricaoTxt");
+});

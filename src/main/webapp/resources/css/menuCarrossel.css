@@ -1,0 +1,49 @@
+.liChanged{color:#CC0000}
+
+#catSelecionada{font-size:10px;}
+
+.categoriaMarcada{border: 2px solid #BCBCBC; background-color:#EFEFEF}
+
+.menuCarrosselItem{padding-top:20px;width:100px;height:110px;font-size:10px;text-align:center }
+
+.menuCarouselFavoritoItem{padding-top:20px;width:100px;height:110px;font-size:10px;text-align:center }
+
+ #sortable1, #sortable2, #sortable3 { list-style-type: none; margin: 0; padding: 0; width: 850px; }
+ 
+ #sortable1 li, #sortable2 li, #sortable3 li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 130px; font-size: 4em; text-align: center; }
+ 
+.marked{background-color:#dddddd}
+ 
+.liSub{cursor:pointer}
+ 
+.changedItem{background-color:#FFAAAA;}
+
+.categoria{cursor:pointer;background:#0E79C9; color:#FFFFFF; font-weight:bold; padding:5px; border:1px solid #cccccc; font-size:12pt; border-bottom:0px solid #cccccc;}
+
+.submenu{padding-top:10px;font-size:16;font-weight:bold}
+
+.itemMenu{color:#000000;}
+
+.sub{display:none;padding:20px;border:1px solid #cccccc;border-top:0px solid #cccccc;}
+
+/* workflow status cores */
+/* EM_EDICAO 0 - laranja */
+.situacao0{color:#FF9900} 
+
+/* PENDENTE_APROVACAO 1 - vermelho */
+.situacao1{color:#CC0000}
+
+/* PENDENTE_PUBLICACAO2 - verde */
+.situacao2{color:#009933}
+
+/* PUBLICADO 3 - azul (ENVIADO_PUBLICACAO)*/
+.situacao3{color:#0066FF}
+
+/* EXCLUIDO 5 - cinza */
+.situacao5{color:#999999}
+
+/* REPROVADO 6 - rosa */
+.situacao6{color:#CC00FF}
+
+/* PUBLICADO 8 - azul */
+.situacao8{color:#0066FF}

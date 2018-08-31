@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf Hello World Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" th:href="@{/css/main.css}" href="../../css/main.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css"/>
+ 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+ </head>
+<body>
+
+<div class="container">
+<table id="testeTable" class="table table-striped table-bordered" width="100%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+</table>
+</div>
+	
+<script  src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js" ></script>
+
+<script type="text/javascript">
+
+var columns = [
+    { "data": "id"},
+    { "data": "nome" }
+];
+
+
+var columnDefs = [
+    {targets: [0], searchable: false},
+	{targets: [1], "type": "char-specials"},
+];
+
+var currentPage=$('li.paginate_button.page-item.active a').attr("data-dt-idx");
+
+if(currentPage==undefined){currentPage=0}
+
+
+$('#testeTable').DataTable({
+	 processing: true,
+     serverSide: true,
+	   aaSorting: [],// desabilita a ordenação default do primeiro campo da tabela.
+	       bProcessing: true,
+	       sAjaxSource: "/listar",
+	       columns: columns,
+	       columnDefs: columnDefs,
+	       "searching": false,
+	       displayStart:0,
+	       displayLength:3,
+	       language: {
+	           processing:     "Processando...",
+	           search:         "Pesquisar:",
+	           lengthMenu:     "Mostrar _MENU_ registros por p&aacute;gina",
+	           info:           "Mostrar de _START_ at&eacute; _END_ de _TOTAL_ registros",
+	           infoEmpty:      "Mostrando 0 at&eacute; 0 de 0 registros",
+	           infoFiltered:   "(Filtrar de _MAX_ total registros)",
+	           infoPostFix:    "",
+	           loadingRecords: "Carregando...",
+	           zeroRecords:    "Nenhum registro encontrado",
+	           emptyTable:     "Nenhum registro encontrado",
+	           paginate: {
+	               first:      "Primeiro",
+	               previous:   "Anterior",
+	               next:       "Pr&oacute;ximo",
+	               last:       "&Uacute;ltimo"
+	           },
+	           aria: {
+	               sortAscending:  ": Ordenar colunas de forma ascendente",
+	               sortDescending: ": Ordenar colunas de forma descendente"
+	           }
+	       },
+	       fnDrawCallback : function() {
+	    	   
+	        },
+	       fnServerData: function ( sSource, aoData, fnCallback ) {
+               $.ajax({
+	               "dataType": 'json',
+	               "type": "GET",
+	               "url": sSource,
+	               "data": aoData,
+	               "success": fnCallback
+	           });
+	       }
+	   });
+	
+</script>
+        
+</body>
+</html>
+
+

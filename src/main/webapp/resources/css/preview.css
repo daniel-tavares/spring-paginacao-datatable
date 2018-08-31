@@ -1,0 +1,36 @@
+html, body {height: 100%;}	
+body{margin:0px 0px 0px 0px}
+.base{width:100%; min-height:100%; height: auto !important; height: 100%; margin: 0 auto -65px; background-color:#eeeeee}
+.topo{width:100%; background-image:url('../images/preview/bg_topo.jpg'); height:130px}
+.topo2{height:106px; background-image:url('bg_topo2.jpg');}
+.top_left{width:385px; height:24px; background-image:url('../images/preview/top_left.jpg');float:left;}
+.top_right{width:276px;height:24px; background-image:url('../images/preview/top_right.jpg');float:right;}
+.logo_caixa{width:15%;height:106px; background-image:url('../images/preview/logo_caixa.jpg'); background-repeat:no-repeat;float:left;}
+.identificacao_usuario{width:100%; height:48px; background-image:url('../images/preview/identificacao_usuario.jpg'); background-repeat:no-repeat; margin-left:25px}
+.minha_conta{width:280px; height:58px; background-image:url('../images/preview/minha_conta.jpg'); float:left}
+.meu_saldo{width:128px; height:58px; background-image:url('../images/preview/meu_saldo.jpg'); float:left}
+.meus_favoritos{width:170px; height:58px; background-image:url('../images/preview/meus_favoritos.jpg'); float:left}
+.outras_contas{width:372px; height:58px; background-image:url('../images/preview/outras_contas.jpg'); float:right}
+.atendimento{width:186px; height:65px; background-image:url('../images/preview/atendimento.jpg'); float:left}
+.rodape_img2{width:460px; height:65px; background-image:url('../images/preview/rodape_img2.jpg'); float:left}
+.sair{width:84px; height:48px; background-image:url('../images/preview/sair.jpg'); float:right}
+.br{clear:both}
+.bannerLateral{width:180px; height:286px; background-image:url('../images/preview/banner_1.jpg');background-repeat:no-repeat}
+.mainDocument{width:100%;min-height:370px; }
+.mainLeft{width:79%;min-height:370px;float:left;}
+.mainRight{width:20%;min-height:370px;float:right;margin-top:40px}
+.busca{width:100%; height:70px; background-color:white; background-image:url('../images/preview/busca.jpg'); background-repeat:no-repeat; background-position:center}
+.rodape, .push {width:100%; height: 65px;}		
+.rodape {background-image:url('../images/preview/rodape_bg.jpg'); background-repeat:repeat-x;}
+.barra_ferramentas {width:276px; height: 65px; background-image:url('../images/preview/barra_ferramentas1.jpg'); background-repeat:no-repeat; float:right}
+.divPublicar{
+	-moz-box-shadow: 3px 3px 5px #777;
+   	-webkit-box-shadow: 1px 1px 15px #777;
+   	border-radius: 5px;
+   	box-shadow: 1px 1px 15px #777;
+   	padding:25px;
+   	position:absolute;
+   	background-color:#ededed; 
+   	z-index:1000;
+   	border:2px solid orange;
+} 

@@ -1,0 +1,235 @@
+html, body {height: 100%;}	
+body{margin:0px 0px 0px 0px}
+.base{width:100%; min-height:100%; height: auto !important; height: 100%; margin: 0 auto -65px; background-color:#FFFFFF}
+.topo{width:100%; background-image:url('../images/preview/bg_topo.jpg'); height:130px}
+.topo2{height:106px; background-image:url('bg_topo2.jpg');}
+.top_left{width:385px; height:24px; background-image:url('../images/preview/top_left.jpg');float:left;}
+.top_right{width:276px;height:24px; background-image:url('../images/preview/top_right.jpg');float:right;}
+.logo_caixa{width:15%;height:106px; background-image:url('../images/preview/logo_caixa.jpg'); background-repeat:no-repeat;float:left;}
+.identificacao_usuario{width:100%; height:48px; background-image:url('../images/preview/identificacao_usuario.jpg'); background-repeat:no-repeat; margin-left:25px}
+.minha_conta{width:280px; height:58px; background-image:url('../images/preview/minha_conta.jpg'); float:left}
+.meu_saldo{width:128px; height:58px; background-image:url('../images/preview/meu_saldo.jpg'); float:left}
+.meus_favoritos{width:170px; height:58px; background-image:url('../images/preview/meus_favoritos.jpg'); float:left}
+.outras_contas{width:372px; height:58px; background-image:url('../images/preview/outras_contas.jpg'); float:right}
+.atendimento{width:186px; height:65px; background-image:url('../images/preview/atendimento.jpg'); float:left}
+.rodape_img2{width:460px; height:65px; background-image:url('../images/preview/rodape_img2.jpg'); float:left}
+
+.sair{width:84px; height:48px; background-image:url('../images/preview/sair.jpg'); float:right}
+.br{clear:both}
+.bannerLateral{width:180px; height:286px; background-image:url('../images/preview/banner_1.jpg');background-repeat:no-repeat}
+.mainDocument{width:100%;min-height:400px; }
+.mainLeft{width:79%;min-height:400px;float:left;}
+.mainRight{width:20%;min-height:400px;float:right;margin-top:40px}
+.busca{width:100%; height:70px; background-color:white; background-image:url('../images/preview/busca.jpg'); background-repeat:no-repeat; background-position:center}
+.rodape, .push {width:100%; height: 65px;}		
+.rodape {background-image:url('../images/preview/rodape_bg.jpg'); background-repeat:repeat-x;}
+.barra_ferramentas {width:276px; height: 65px; background-image:url('../images/preview/barra_ferramentas1.jpg'); background-repeat:no-repeat; float:right}
+
+.mainLogin{width:100%;min-height:400px;float:left;}
+.topo_login{width:100%; background-image:url('../images/preview/bg_topo_login.jpg'); height:130px}
+.logo_caixa_login{width:15%;height:106px; background-image:url('../images/preview/logo_caixa_login.jpg'); background-repeat:no-repeat;float:left;}
+.box_login{width:252px;height:317px;background-image:url('../images/preview/login_box.png'); background-repeat:no-repeat; }
+.box_cadastre_se{width:251px;height:154px;background-image:url('../images/preview/cadastre_se_preview.png'); background-repeat:no-repeat; }
+.box_conheca_ibc{width:369px;height:105px;background-image:url('../images/preview/conheca_ibc.jpg'); background-repeat:no-repeat; }
+.box_imagem_lateral{width:433px;height:317px;background-image:url('../images/preview/imagem_lateral_preview.png'); background-repeat:no-repeat; }
+.box_central_login{width:251px;height:158px;background-image:url('../images/preview/box_central_preview.png'); background-repeat:no-repeat; }
+.home_banking_internet{
+	width:100%; 
+	height:408px; 
+	background-position:center; 
+	background-repeat:no-repeat; 
+	-webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+    }
+.home_banking_internet_bg{
+	background-image:url('../images/preview/Home_Banking_Internet.jpg'); 
+	background-position:center; 
+	background-repeat:no-repeat;
+	}
+.menu ul{
+	cursor: pointer;
+}
+
+.menu {
+    cursor: pointer;
+    color: #000;
+    line-height: 40px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 50px;
+}
+
+.menu:hover{
+    cursor: pointer;
+    line-height: 40px;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.selecionado {
+    cursor: pointer;
+    line-height: 40px;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 50px;
+}
+.menu_1 {background: url('../images/preview/bkgBarraBranca1.gif') no-repeat;}
+.menu_2 {background: url('../images/preview/bkgBarraBranca2.gif') no-repeat;}
+.menu_3 {background: url('../images/preview/bkgBarraBranca3.gif') no-repeat;}
+.menu_4 {background: url('../images/preview/bkgBarraBranca4.gif') no-repeat;}
+.menu_5 {background: url('../images/preview/bkgBarraBranca5.gif') no-repeat;}
+
+.selecionado_1, .menu_1:hover {background: url('../images/preview/bkgBarraLaranja1.gif') no-repeat;}
+.selecionado_2, .menu_2:hover {background: url('../images/preview/bkgBarraLaranja2.gif') no-repeat;}
+.selecionado_3, .menu_3:hover {background: url('../images/preview/bkgBarraLaranja3.gif') no-repeat;}
+.selecionado_4, .menu_4:hover {background: url('../images/preview/bkgBarraLaranja4.gif') no-repeat;}
+.selecionado_5, .menu_5:hover {background: url('../images/preview/bkgBarraLaranja5.gif') no-repeat;}
+
+.quadro{
+    padding-left: 30px;
+	background:#E7E7E7;
+	height:230px;
+	width:600px;
+	margin-left: 241px;
+	display:none;
+	border-radius:8px 8px 8px 8px;
+	-webkit-border-radius:8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+}
+
+.menu_login {
+    padding-top:20px;
+    width: 250px;
+    float:left
+}
+
+.quadro_legend2{ 
+	padding-left: 0px;
+	font-family: helvetica;
+	font-size:15px; 
+	color: #4F4F4F;
+	text-decoration:none;
+	font-weight:bold; 
+}
+
+.quadro_legend2-menor{
+	padding-left: 0px;
+	font-family: helvetica;
+	font-size:12px; 
+	color: #4F4F4F;
+	text-decoration:none;
+	font-weight:bold; 
+	padding-right:20px;
+	text-align:justify;
+}
+
+nav ul, nav ol, ul, ol {
+list-style: none;
+list-style-image: none;
+margin: 0;
+padding: 0;
+}
+
+.background-conhecaIBC {
+position: absolute;
+padding-left: 0px;
+padding-top: 0px;
+width: 160px;
+height: 109px;
+background: url('../images/preview/Conheca_IBCaixa.png') no-repeat left;
+}
+
+.area {
+position: relative;
+margin: 0 auto;
+max-width: 980px;
+min-width: 600px;
+width: 100%;
+font-size: 1.100em;
+font-weight: bold;
+color: #fff;
+}
+
+
+.footerSeparator{
+padding: 0 10px 12px 0;
+height: 65px;
+width:60px;
+background: url('../images/preview/footer-line-separator.png') repeat-y center;
+}
+
+.text-shadow, text-shadow:hover{color:white;text-shadow:0 2px 0 #000000;}
+
+.white{color:white}
+
+.legend2 {
+padding-left: 15px;
+font-family: helvetica;
+font-size: 16px;
+color: #4F4F4F;
+text-decoration: none;
+font-weight: bold;
+}
+
+.button-orange {
+position: relative;
+float: left;
+height: 36px;
+margin-left: 15px;
+padding: 0 0 0 10px;
+font-size: 11px;
+font-weight: bold;
+color: #fff;
+text-transform: uppercase;
+background: url('../images/preview/button-orange-left-alink.png') repeat-x;
+text-shadow: none;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}	
+
+button {
+display: block;
+padding: 4px 10px;
+font-family: Arial, Helvetica;
+color: #fff;
+text-decoration: none;
+text-shadow: 0 2px 0 #000000;
+background-repeat: no-repeat;
+}	
+
+.boxQuemTemConta{background: url('../images/preview/cad_usr_conta.jpg') no-repeat; width:328px; height:181px; padding-top:15px}
+
+.boxQuemNaoTemConta{background: url('../images/preview/cad_usr_sem_conta.jpg') no-repeat; width:328px; height:181px; padding-top:15px}
+
+.iconLapis{background: url('../images/preview/icon_lapis.gif') no-repeat; width:29px; height:29px; }
+
+.iconCadastro{background: url('../images/preview/logo-identificacao.png') no-repeat; width:43px; height:35px; }
+
+.textoCentral{padding:10px; padding-left:50px}
+
+.tituloPagina{font-weight: bold;font-size: 20px;color: #0059be;margin-bottom: 10px;}
+
+.h2Azul{font: bold 14px Arial, san-serif;color: #003576;}
+
+.textoIdentificaUsr{color: #003576;display: block;float: left;font-size: 13px;font-weight: bold;margin-right: 5px;min-width: 140px;padding-top: 7px;width: auto;}
+
+.divPublicar{
+	-moz-box-shadow: 3px 3px 5px #777;
+   	-webkit-box-shadow: 1px 1px 15px #777;
+   	box-shadow: 1px 1px 15px #777;
+   	padding:25px;
+   	position:absolute;
+   	background-color:#ededed; 
+   	z-index:1000;
+   	border:2px solid orange;
+}  
