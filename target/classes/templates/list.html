@@ -41,24 +41,30 @@ var columnDefs = [
 
 var currentPage=$('li.paginate_button.page-item.active a').attr("data-dt-idx");
 
-if(currentPage==undefined){currentPage=0}
-
-
 $('#testeTable').DataTable({
-	 processing: true,
-     serverSide: true,
-	   aaSorting: [],// desabilita a ordenação default do primeiro campo da tabela.
+	       processing: true,
+           serverSide: true,
+	       aaSorting: [],
+	       lengthMenu: [[3, 5, 10, 50, 100],['3 Registros','5 Registros','10 Registros','50 Registros','100 Registros']],
 	       bProcessing: true,
 	       sAjaxSource: "/listar",
 	       columns: columns,
 	       columnDefs: columnDefs,
-	       "searching": false,
+	       searching: true,
+	       filter:true,
 	       displayStart:0,
-	       displayLength:3,
+	       displayLength:10,
+	       dataFilter: function(data){
+               var json = jQuery.parseJSON( data );
+               json.recordsTotal = json.total;
+               json.recordsFiltered = json.total;
+               json.data = json.list;
+               return JSON.stringify( json ); // return JSON string
+           },
 	       language: {
 	           processing:     "Processando...",
 	           search:         "Pesquisar:",
-	           lengthMenu:     "Mostrar _MENU_ registros por p&aacute;gina",
+	           lengthMenu:     "Mostrar _MENU_ por p&aacute;gina",
 	           info:           "Mostrar de _START_ at&eacute; _END_ de _TOTAL_ registros",
 	           infoEmpty:      "Mostrando 0 at&eacute; 0 de 0 registros",
 	           infoFiltered:   "(Filtrar de _MAX_ total registros)",
@@ -81,18 +87,17 @@ $('#testeTable').DataTable({
 	    	   
 	        },
 	       fnServerData: function ( sSource, aoData, fnCallback ) {
-               $.ajax({
+              $.ajax({
 	               "dataType": 'json',
 	               "type": "GET",
 	               "url": sSource,
 	               "data": aoData,
-	               "success": fnCallback
+	               "success": fnCallback,
 	           });
 	       }
 	   });
 	
 </script>
-        
 </body>
 </html>
 
